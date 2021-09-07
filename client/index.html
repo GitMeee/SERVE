@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVE</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+<body class= "adminAdd">
+
+
+  <div class="topnav" id="myTopnav">
+    <a class="active"  href="index" ><i class="fa fa-fw fa-user-plus"></i> Add</a>
+    <a class="inactive" href="authorize" ><i class="fa fa-fw fa-unlock"></i> Authorize</a>
+    <a class="inactive"  href="end" ><i class="fa fa-fw fa-power-off"></i> End</a>
+    <a class="inactive"  style="float: right; margin-right: 5px;" href="index" ><i class="fa fa-fw fa-sign-out"></i> LogOut</a>
+    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+ 
+  <div class="main">
+    <h1 align="center">ADD CANDIDATE:</h1>
+    <div>
+      <form id="form" align="center">
+        
+        <label for="name" > Name:</label><br>
+        <i class="fa fa-fw fa-user"></i>
+        <input type="text" id="name" placeholder="Complete name..">
+        <br/>
+        <label for="position" >Position:</label><br>
+        <i class="fa fa-fw fa-archive"></i>
+        <select id="position">
+          <option>President</option>
+          <option>Vice President</option>
+          <option>Senator</option>
+        </select>
+      <br>
+      
+        <button type="submit" ><i class="fa fa-fw fa-user-plus"></i>ADD CANDIDATE</button>
+      </form>
+    </div>
+    <br>
+    <h2>List of Candidates:</h2>
+    <table id="candidates">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Position</th>
+          </tr>
+        </thead>
+        <tbody id="candidatesResults">
+        </tbody>
+      </table>
+    
+     </div>
+      
+
+
+
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+    <script type = "text/javascript" src="src/utils.js"></script>
+    <script type="text/javascript" src ="src/index.js"></script>
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/node_modules/web3/dist/web3.min.js"></script>
+    
+</body>
+</html>

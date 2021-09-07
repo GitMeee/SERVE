@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVE</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="adminAuthorize">
+
+ 
+ 
+
+  <div class="topnav" id="myTopnav">
+    <a class="inactive"  href="index" ><i class="fa fa-fw fa-user-plus"></i> Add</a>
+    <a class="active" href="authorize" ><i class="fa fa-fw fa-unlock"></i> Authorize</a>
+    <a class="inactive"  href="#" ><i class="fa fa-fw fa-power-off"></i> End</a>
+    <a class="inactive"  href="#" ><i class="fa fa-fw fa-sign-out"></i> LogOut</a>
+    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  
+  <div class=main>
+    <h1 align="center">AUTHORIZE VOTER:</h1>
+    <div>
+      <form id="authorizeform" align="center">
+        
+        <label for="address" > Address:</label><br/>
+        <i class="fa fa-fw fa-address-book"></i>
+        <input type="text" id="address" placeholder="0x..">
+        <br/>
+      
+        <button type="submit"><i class="fa fa-fw fa-ticket"></i> AUTHORIZE</button>
+      </form>
+    </div>
+    <br>
+     </div>
+      
+
+
+
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+    <script type = "text/javascript" src="src/utils.js"></script>
+    <script type="text/javascript" src ="src/index.js"></script>
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/node_modules/web3/dist/web3.min.js"></script>
+    
+</body>
+</html>
